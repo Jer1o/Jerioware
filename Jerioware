@@ -1,0 +1,47 @@
+local StarterGui = game:GetService("StarterGui")
+local bindable = Instance.new("BindableFunction")
+
+function bindable.OnInvoke(response)
+   game:GetService("StarterGui"):SetCore("SendNotification", { 
+    Title = "Jerioware";
+    Text = (response .. " Version has been executed.");
+    Icon = "rbxthumb://type=Asset&id=5159492898&w=150&h=150"})
+    Duration = 5;
+end
+
+StarterGui:SetCore("SendNotification", {
+	Title = "Jerioware",
+	Text = "What Executor are you using for Jerioware?",
+	Duration = 60,
+	Callback = bindable,
+	Button1 = "Synapse X",
+	Button2 = "Scriptware"
+})
+
+Wait(7)
+  game:GetService("StarterGui"):SetCore("SendNotification", { 
+    Title = "Jerioware";
+    Text = ("Loading...");
+    Icon = "rbxthumb://type=Asset&id=5159492898&w=150&h=150"})
+    Duration = 3;
+Wait(2)
+  game:GetService("StarterGui"):SetCore("SendNotification", { 
+    Title = "Jerioware";
+    Text = ("Loaded");
+    Icon = "rbxthumb://type=Asset&id=5159492898&w=150&h=150"})
+    Duration = 3;
+Wait(10)
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+    Title = "Credits";
+    Text = ("Made by Jerio");
+    Icon = "rbxthumb://type=Asset&id=5159492898&w=150&h=150"})
+    Duration = 3;
+
+
+-- Above Is Notifications
+-- Below Its script itself
+
+
+wait(10)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Jer1o/Jerioware/main/JeriowareUniversal"))()
+
