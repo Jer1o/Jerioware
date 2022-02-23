@@ -30,7 +30,7 @@ Wait(2)
     Text = ("Loaded");
     Icon = "rbxthumb://type=Asset&id=5159492898&w=150&h=150"})
     Duration = 3;
-Wait(10)
+Wait(7)
 game:GetService("StarterGui"):SetCore("SendNotification", { 
     Title = "Credits";
     Text = ("Made by Jerio");
@@ -42,6 +42,6 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 -- Below Its script itself
 
 
-wait(10)
+wait(7)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Jer1o/Jerioware/main/JeriowareUniversal"))()
 
